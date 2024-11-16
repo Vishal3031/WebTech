@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+
+  <body>
+    <h2>html forms</h2>
+
+    <form action="backend.php">
+      <!--it is use bcz, whenever we submit our form then it can stored "backend.php" who is writing in js-->
+
+      <!-- id or label name are same -->
+      <label for="name"> name: </label>
+      <div>
+        <input type="name" name="myname" id="name" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="role"> role: </label>
+        <input type="role" name="myrole" id="role" />
+      </div>
+
+      <br />
+
+      <div>email:<input type="email" name="myemail" /></div>
+
+      <br />
+
+      <div>
+        <input type="date" name="mydate" />
+      </div>
+
+      <br />
+
+      <div>bonus: <input type="number" name="mybonus" /></div>
+
+      <br />
+
+      <div>
+        are you eligible<input type="checkbox" name="myeligiblity" checked />
+      </div>
+
+      <br />
+
+      <div>
+        gender: male <input type="radio" name="mygender" />\ female<input
+          type="radio"
+          name="mygender"
+        />other<input type="radio" name="mygender" />
+      </div>
+
+      <br />
+
+      <div>
+        write about yourself:<br /><textarea
+          name="mytext"
+          id=""
+          cols="90"
+          rows="15"
+        ></textarea>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car">car</label>
+        <select name="mycar" id="car">
+          <option value="indica" selected>indica</option>
+          <option value="honda">honda</option>
+          <option value="boleno">boleno</option>
+        </select>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div>
+        <input type="submit" value="submitnow" />
+        <input type="reset" value="resetnow" />
+      </div>
+    </form>
+  </body>
+</html>
