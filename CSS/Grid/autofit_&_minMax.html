@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: center;  */
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /*minimum width 300px or maximum width is 1fr*/
+        }
+        .box{
+            border: 3px solid rgb(244, 105, 128);
+            background-color: pink;
+            padding: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box1</div>
+        <div class="box">this is box2</div>
+        <div class="box">this is box3</div>
+        <div class="box">this is box4</div>
+        <div class="box">this is box5</div>
+        <div class="box">this is box6</div>
+        <div class="box">this is box7</div>
+        <div class="box">this is box8</div>
+        <div class="box">this is box9</div>
+        <div class="box">this is box10</div>
+        <div class="box">this is box11</div>
+        <div class="box">this is box12</div>
+    </div>
+</body>
+</html>

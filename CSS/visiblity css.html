@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiblity</title>
+
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black
+        }
+
+        #box1{
+            background-color: aqua;
+            /*visibility: hidden;*/ /*will hide the element but it will showing that empty space*/
+            /*display: none;*/ /*will hide that elements also the empty space*/
+        }
+
+        #box2{
+            background-color: rgb(146, 245, 169);
+        }
+
+        #box3{
+            background-color: rgb(252, 155, 191);
+        }
+
+        #box4{
+            background-color: rgb(199, 237, 154);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- ".box#box$*4" $*4 means here u can give a unique id with 4 different nmbrs -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

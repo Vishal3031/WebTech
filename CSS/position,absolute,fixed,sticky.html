@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        .container{
+            border: 3px solid rgb(164, 234, 239);
+            background-color: aliceblue;
+            height: 3444px;
+        }
+
+        .box{
+            border: 2px solid rgb(244, 155, 155);
+            width: 150px;
+            height: 150px;
+            display: inline-block; /*here it is inline elements that's why we using "inline 
+            block"*/
+            margin: 2px;
+        }
+
+/* here, some position tu use , static(defult), relative, absolute, fixed, sticky */
+        #box3{
+/*move to its normal position and will leave a gap to at normal position*/
+            /* position: relative; 
+            top: 34px;
+            left: 34px;
+            right: 30px;
+            bottom: 34px; */
+
+/* it moves our position by its first perants and so on */
+            position: absolute;
+            top: 34px;
+            left: 34px;
+            right: 35px ;
+            bottom: 36px;
+
+/*it is use for if u want to ur element is fixed to our position also u can scroll ur page bt ur element position is fixed*/
+            /* position: fixed;
+            right:23px ;
+            top:10px ;
+            left:20px ;
+            bottom:40px ; */
+
+/* it,s use if u want to stick ur elements in the same position */
+            /* position: sticky;
+            top: 3px;
+
+            right:4px ;
+            left:65px ;
+            bottom: 5px; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">hello vishal</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+</html>

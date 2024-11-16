@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and more designing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&display=swap" rel="stylesheet">
+
+    <style>
+        /* pseudo selectors */
+        a{
+            text-decoration: none; /*it is use for ur text decoration clear or non-clear*/
+            color: black;
+        }
+
+        a:hover{/* it means if your cursor is going to any of the text also that text is blink with color*/
+                color: rgb(125, 242, 250);
+                background-color: antiquewhite;
+        }
+
+        a:visited{ /*using bcz, if u r already visited that link you writting here "a". also that word is blinked in color*/
+            /* color:brown */
+            background-color: rgb(0, 26, 255)
+        }
+
+        a:active{ /*it is use for that, if u r not visited that link you writting here "a". so than, it is vice-versa of visited*/
+            /* color: rgb(223, 197, 247); */
+            background-color: rgb(223, 197, 247);
+        }
+
+        .btn:hover{ /*it is almost same in case of "a:hover,visited and active"*/
+           color: rgb(96, 244, 182); 
+           background-color: rgb(165, 102, 236);
+
+     /* border: 2px solid black; *//*if u want to blink ur word into the border*/
+        }
+
+        .btn{
+            font-family:'Itim', cursive;
+            font-weight: bold;
+
+            background-color: rgb(208, 170, 245);
+            padding: 6px;
+            border: none;/*for non border*/
+            cursor: pointer;/*it is use for ur cursor showing hand */
+            font-size: 15px;
+            /* border-radius: 4px; */
+        }
+
+
+
+
+
+        .vihaan{
+            border: 3px solid rgb(210, 246, 178);
+            padding: 34px;
+            margin: auto;
+            width: 500px;
+            background-color: aliceblue;
+        }
+
+        h3{
+            margin: auto;
+            width: 200px;
+            padding: 1px;
+        }
+
+        p{
+            /* padding: 2px 10px; */
+            margin: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="vihaan">
+        <h3>this is a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maiores deleniti 
+        molestias. Omnis in corporis eum numquam quasi est tempore enim laboriosam sunt 
+        inventore! Quisquam deserunt adipisci dicta velit mollitia, atque non maxime, 
+        repudiandae soluta, voluptatem ipsa obcaecati hic cum.</p>
+
+        <a href="http://facebook.com" class="btn">read more</a>
+
+        <button class="btn">contact us</button>
+    </div>
+    
+</body>
+</html>

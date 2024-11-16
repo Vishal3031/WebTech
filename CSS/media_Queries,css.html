@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <!-- media querie is way to design a responsive websites in our website  -->
+    <!-- media querie is use if your responsive width are within "max" "min" then, some other CSS features are added in ur websites -->
+
+<!--here,a lot of media types are there in google search, uses of different ways-->
+that's we are using after media "only screen and"
+    <style>
+            .box{
+                font-size: 49px;
+                background-color: rgb(171, 224, 224);
+                color: black;
+                text-align: center;
+                display: none;
+            }
+
+            @media only screen and (max-width:650px){
+                #box-1{
+                    display: block;
+                }
+            }
+
+            @media only screen and (min-width:651px) and (max-width:1250px){
+                #box-2{
+                    display: block;
+                    background-color: rgb(189, 240, 145);
+                }
+            }
+
+            @media only screen and (min-width:1250px) and (max-width:2000px){
+                #box-3{
+                    display: block;
+                    background-color: rgb(217, 231, 143);
+                }
+            }
+
+            @media only screen and (min-width:2000px){
+                #box-4{
+                    display: block;
+                    background-color: rgb(249, 147, 240);
+                    padding: 40px;
+                    font-size: 135px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">mai ek iphone hun</div>
+    <div class="box" id="box-2">mai ek tablet hun</div>
+    <div class="box" id="box-3">mai ek desktop computer hun</div>
+    <div class="box" id="box-4">mai ek widescreen computer hun</div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and custom properties</title>
+    
+    <style>
+        /* we r using variable for selecting any either color also we can copy and paste that variable name for selecting a same color */
+        :root{
+            --primary-color: violet;
+            --secondary-color: rgb(9, 9, 9);
+
+            --maxw:333px;
+        }
+        .box{
+            /* --box-color: violet; */
+            width: 150px;
+            height: 150px;
+            background-color: var(--primary-color);
+            margin: 3px 7px;
+            border: 2px solid rgb(249, 135, 154);
+            box-shadow:3px 3px var(--secondary-color);
+        }
+        .container{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            max-width: var(--maxw);
+            background-color: aquamarine;
+            margin: auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box container</title>
+
+    <style>
+/* this is universal selector it is use for all your stylsheet control  */
+        * {
+/*before we can use this border-box. it is use for not chnging width bcz if you change margin or padding also the width are automatically changed. so, we are using this on universal selector for controling all the stylsheet in the same way */
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+            .container{
+                background-color: rgb(228 217 241);
+                border: 3px solid rgb(153 63 202);
+
+/* we can set padding for top, bottom, left and right like this  */
+                /* padding-top: 79px; */
+                /* padding-bottom: 79px; */
+                /* padding-left: 35px; */
+                /* padding-right: 70px; */
+
+/* we can set margin for top, bottom, left and right like this  */
+                /* margin-top: 79px; */
+                /* margin-bottom: 79px; */
+                /* margin-left: 35px; */
+                /* margin-right: 70px; */
+
+
+/* in simply way  */
+                /* padding/margin = top right botton left  */
+                /* padding: 23px 56px 6px 78px;  */
+
+/* you also let x or y in padding/margin  */
+/* padding: y(top/bottom) x(left/right); */
+                padding: 34px 19px;
+                margin: 25px 350px;
+                border-radius: 12px;
+                width: 533px;
+
+                /* box-sizing: border-box;  */
+/*it is use for not changing width bcz if you change 
+margin or padding the width are automatically changed*/
+            }
+
+            body{ /*it is use for whole website background*/
+                background-color:#dfb8e6;
+            }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="vihaan">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad modi minima, inventore ipsa sapiente exercitationem enim distinctio in corporis voluptatum aut, dolorem dicta beatae culpa aperiam! Tempore, maxime libero.</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="vishal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad modi minima, inventore ipsa sapiente exercitationem enim distinctio in corporis voluptatum aut, dolorem dicta beatae culpa aperiam! Tempore, maxime libero.</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="bishu">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad modi minima, inventore ipsa sapiente exercitationem enim distinctio in corporis voluptatum aut, dolorem dicta beatae culpa aperiam! Tempore, maxime libero.</p>
+    </div>
+
+</body>
+</html>

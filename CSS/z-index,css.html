@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+<!-- z-index is support by position= absolute,relative,fixed,sticky, also it can't be support in static (defult ) -->
+
+<!-- z-index is use to one box/element to top another box -->
+
+<!-- if z-index is greater than the other z-index, the, our websites is following that greater z-index. -->
+
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black
+        }
+
+
+        #box1{
+            position: relative;
+            top: 31px;
+            background-color: aqua;
+            z-index: 23; /* if z-index is greater than the other z-index, the, our websites is following that greater z-index.*/ 
+
+        }
+
+        /* #box2{ */
+            /* position: relative; */
+            /* top: 40px; */
+            /* bottom: 35px; */
+            /*z-index: 20;                         /*with transparancy*/
+            /* background-color: rgb(146, 245, 169); */
+        /* } */
+
+        /* #box3{
+            background-color: rgb(252, 155, 191);
+        }
+
+        #box4{
+            background-color: rgb(199, 237, 154);
+        } */
+    </style>
+</head>
+<body>
+    <!-- ".box#box$*4" $*4 means here u can give a unique id with 4 different nmbrs -->
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

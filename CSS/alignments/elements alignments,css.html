@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elements alignment</title>
+    <link href="https://fonts.googleapis.com/css2? 
+    family=Dancing+Script&family=Itim&family=Solitreo&display=swap" rel="stylesheet">
+    
+    <style>
+      *{
+          box-sizing: border-box;
+      }
+            /* now, we are using elements alignment  */
+      #fruits{
+        float: left;
+        width: 48%;
+      }
+
+      #computer{
+        float: left;
+        width: 48%;
+      }
+
+      #stationary{
+        /* float: left;  */
+        clear: both; /*it is use for elements are not ovrlapping each other *//*also u can write "left/ right" */
+        width: 99%;
+      }
+
+      #glasses{
+        float: left;
+        width: 100%;
+      }
+
+      /* text allign  */
+      p,h3{
+        /* text-align: left;
+        text-align: right;
+        text-align: center; */
+        text-align: justify;
+      }
+
+      h1{
+        margin: 20px auto;
+        width: 390px;
+      }
+      
+      .container {
+        width: 900px;
+        border: 4px solid rgb(244, 108, 215);
+        margin: auto; /* auto means center your elements*/
+        /* margin: 33px auto;  */
+      }
+
+      .item {
+        border: 3px solid rgb(188, 82, 218);
+        margin: 9px 5px;
+        padding: 9px 17px;
+        background-color: rgb(224, 201, 245);
+      }
+
+      body {
+        font-family: 'Dancing Script', cursive;
+        background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/07/kobu-agency-ipARHaxETRk-unsplash.jpg);
+      }
+
+    </style>    
+  </head>
+
+  <body>
+    <div class="container">
+      <h1> welcome to my store </h1>
+      <div id="fruits" class="item">
+        <h3>fruits</h3>
+        <p id="fruitipara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+          eaque! Tenetur praesentium nam adipisci? Mollitia provident esse ut
+          rem eum expedita aspernatur? Quod repellendus suscipit et, ex illo
+          voluptas quibusdam.
+        </p>
+      </div>
+
+      <div id="computer" class="item">
+        <h3>computers</h3>
+        <p id="computerpara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+          eaque! Tenetur praesentium nam adipisci? Mollitia provident esse ut
+          rem eum expedita aspernatur? Quod repellendus suscipit et, ex illo
+          voluptas quibusdam.
+        </p>
+      </div>
+
+      <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+          eaque! Tenetur praesentium nam adipisci? Mollitia provident esse ut
+          rem eum expedita aspernatur? Quod repellendus suscipit et, ex illo
+          voluptas quibusdam.
+        </p>
+      </div>
+
+      <div id="galasses" class="item">
+        <h3>glasses</h3>
+        <p id="glasspara" class="para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+          eaque! Tenetur praesentium nam adipisci? Mollitia provident esse ut
+          rem eum expedita aspernatur? Quod repellendus suscipit et, ex illo
+          voluptas quibusdam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

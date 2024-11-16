@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>using media queries with css grid</title>
+</head>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: pink;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(231, 149, 240);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: aqua;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:800px) {
+            body {
+                background-color: rgb(161, 84, 232);
+            }
+        }
+
+        .vihaan {
+            border: 3px solid rgb(92, 25, 108);
+            padding: 10px 23px;
+            background-color: rgb(235, 184, 240);
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            align-items: center;
+        }
+    </style>
+
+<body>
+    <div class="container">
+
+        <nav class="vihaan">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+
+        <section class="vihaan">
+            <h2>Learn Css in Hindi</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur praesentium laudantium rerum cumque. Aliquam est fugiat, ipsum distinctio suscipit laudantium laboriosam commodi odio, velit cupiditate, culpa quae hic quas minus totam. Ducimus quibusdam sed autem natus vitae. Sed possimus quod at magnam nam ratione minus accusantium exercitationem labore voluptatibus quidem, odit, eveniet quae quaerat iure quia ut nulla reiciendis libero dolorem? Labore illo ducimus quidem consectetur eaque optio. Eligendi eaque, distinctio quos quaerat optio doloribus sapiente nihil culpa! Cum at a exercitationem quod repellendus, vitae corrupti? Deleniti doloremque cumque et dicta enim, in laborum, perspiciatis eius quas rem, vitae reiciendis! Possimus quo ipsum suscipit doloribus maxime ratione est nihil iure laboriosam veritatis, aut odit magnam itaque eum nulla ut nesciunt. Sapiente voluptate, delectus ratione nemo sunt soluta! Officia ad recusandae, atque, alias esse similique repellat molestias reiciendis facilis temporibus modi dolore illo, impedit ratione dignissimos voluptatibus necessitatibus eos reprehenderit? Tempora culpa eius nulla quis voluptatum? Soluta sequi perspiciatis atque voluptate aut. Saepe sint, beatae enim similique corrupti repellendus dicta hic. Sapiente accusamus explicabo eaque, voluptates sequi, eveniet reprehenderit saepe a vel ipsa quidem voluptatibus dolor alias repellat adipisci amet dolore. Expedita officia asperiores labore, hic provident facere. Vero, tempore facilis numquam officia ratione expedita corrupti dolore placeat. Eaque rerum illum magni perferendis quis, dolore, excepturi esse eius, rem distinctio adipisci odit beatae. Quae, consequuntur similique quas optio voluptate, tempora amet, inventore repellat nihil asperiores perferendis commodi reiciendis. Est, ullam obcaecati hic perspiciatis vitae quae blanditiis quas! Odio animi, explicabo dignissimos assumenda nulla delectus nam quod vel ad doloribus exercitationem alias consequuntur ab sint molestias earum, doloremque, ex blanditiis reprehenderit mollitia. Rem architecto consequuntur quo expedita fugiat autem minus rerum quis enim hic facere, eveniet at debitis error corrupti vitae natus, repellendus saepe temporibus. Beatae ipsa, ullam architecto aliquam expedita earum cumque quo eius alias quas ipsum facilis maiores illo, sunt quidem, sit incidunt eveniet totam voluptatem a voluptas reiciendis necessitatibus? Culpa voluptates et ducimus, aperiam sequi omnis, nam soluta ex cumque quaerat maiores maxime cupiditate possimus id tempore! Culpa explicabo natus quaerat praesentium quod assumenda voluptas sapiente nobis ducimus impedit perferendis repellat laudantium dignissimos expedita pariatur vero nesciunt, exercitationem quo nihil! Repellat, molestias nam? Culpa numquam modi nulla nesciunt, quas ipsa hic consequuntur exercitationem non totam praesentium possimus earum sint iure, voluptatem eum facere vel reiciendis quod a veniam pariatur quae? Qui neque inventore repellendus provident deleniti, consequatur at. Fugit!</p>
+        </section>
+
+        <aside class="vihaan">
+            <h1>More About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita optio ipsum quod! Quos consectetur, sit et distinctio eveniet minus eum officiis alias dolore possimus autem animi vitae nostrum perferendis saepe tenetur beatae ab, enim vel ad! Nemo optio sed laborum repellat molestias distinctio quidem veniam veritatis! Eum, velit illum consequuntur perferendis placeat beatae neque illo doloremque iusto natus repellat dicta. Excepturi inventore vel harum sint a est voluptate, architecto labore pariatur doloribus dolor blanditiis saepe minima cumque neque eos! A, est dolorum explicabo accusantium ex sed incidunt officiis doloremque fugit voluptas deserunt assumenda quis iusto eum, numquam culpa qui dicta. Vitae molestiae odit ad voluptas distinctio quo beatae, temporibus minus laudantium quaerat corrupti quae alias, natus consequuntur ullam modi accusantium nihil fugiat dolore maxime ipsam? Totam corrupti modi sed quos suscipit saepe quaerat nostrum dolorem, ex aperiam quibusdam veniam maxime aut temporibus exercitationem architecto aspernatur vel excepturi tempore ullam labore voluptates? Assumenda porro ipsa quas labore eum, omnis distinctio expedita numquam voluptates. Autem fugit accusantium ratione assumenda. Quia, porro neque ducimus quis molestias nesciunt officiis dolores. Voluptatum, molestiae totam. Quos rerum pariatur facere nulla animi ab adipisci distinctio aut ipsa amet, repudiandae similique, perspiciatis soluta voluptas! Consequatur quasi blanditiis placeat!</p>
+        </aside>
+    </div>
+    <footer class="vihaan">Copyright || Mr Vihaan</footer>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+
+    <style>
+            .navbar{
+                background-color: rgb(160, 248, 248);
+                border-radius: 5px;
+
+            }
+
+            .navbar ul{
+                overflow: auto; /*if your parent is ovrflow then, u can use this*/
+            }
+
+            .navbar li{ /*if u float any thing then, ovrflow something in this parent*/
+                float:left;
+                list-style:none; /*it is use for removing ur extra bullets */
+                margin: 13px 20px;
+                /* padding-top: 7px; */
+            }
+
+            .navbar li a{
+                padding: 3px 3px;
+                text-decoration: none; /*it is use for ur text decoration clear or non-clear*/
+                color: black;
+            }
+
+            .navbar li a:hover{
+                /* background-color: rgb(194, 146, 239); */
+                color: rgb(182, 129, 232);
+            }
+
+
+            .search{
+                float: right;
+                color: black;
+                padding: 11px 75px;
+            }
+
+            .navbar input{
+                border: 2px solid black;
+                border-radius: 9px;
+                padding: 2px 17px;
+                width: 130px;
+            }
+
+            body{
+                background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/07/kobu-agency-ipARHaxETRk-unsplash.jpg);
+            }
+
+    </style>
+</head>
+<body>
+
+    <header>  <!--it is use for heading of ur websites -->
+        <nav class="navbar"> <!--it is use for navigation bar -->
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li> <!--here, "a" is using bcz of spaces and "#" is using for blink the word-->
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+
+                <div class="search">
+                    <!-- this is searchbox -->
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

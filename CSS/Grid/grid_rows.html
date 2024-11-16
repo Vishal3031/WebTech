@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr ;    /*others rows are 2fr*/
+            grid-template-columns: 1fr 4fr 2fr;    /*also u can (1fr 4fr)*/
+            grid-gap: 1rem;
+            /* grid-template-columns: repeat(9, 2rem);  */
+        }
+        .box{
+            background-color: yellowgreen;
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">this is Box1</div>
+        <div class="box">this is Box2</div>
+        <div class="box">this is Box3</div>
+        <div class="box">this is Box4</div>
+        <div class="box">this is Box5</div>
+        <div class="box">this is Box6</div>
+        <div class="box">this is Box7</div>
+        <div class="box">this is Box8</div>
+        <div class="box">this is Box9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+
+    <style>
+        h1{
+            background-color: rgb(205, 171, 238);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p{  /*this is selecting ur all div paragraph*//* also u can targeting only inside li p "div li p"*/
+            color: brown;
+            background-color: aliceblue;
+        }
+
+        div > p{ /*it is use for div direct child(paragraph"p"after div)*/
+            color: blueviolet;
+            background-color: aquamarine;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div + p{ /*from that paragraph/selector who just before div*/
+            color: brown;
+            background-color: rgb(178, 238, 244);
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul class="vishal">
+                <li><p>this is another paragraph inside li</p></li>
+                <li>this will not get effected</li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+    
+</body>
+</html>

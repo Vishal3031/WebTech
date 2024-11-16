@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Solitreo&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        header{
+            /* border: 2px solid royalblue; */
+            margin: auto;
+            width: 1200px; /*reuse bcz of responsive*/
+            /*now, "width,margin"'s remove jst bcz of text align is center with the help of this, so now we can remove this also it never reflect ur websites*/
+        }
+    
+
+        img{
+            width: 90px;
+            display: block; /*it is use for your word inline is convert into block*/
+            margin: 0px auto;
+        }
+
+        h1{
+            color: aliceblue;
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+            margin: 0px;
+            /* display: inline; */
+            text-align: center;
+        }
+
+        .box{
+            border: 4px solid rgb(236, 193, 64);
+            color: aliceblue;
+            /* background-color: rgb(244, 226, 179); */
+            margin: 4px 0px;
+            padding: 4px 4px;
+
+            display:inline-block;/*inline block is use for bcz if u changing that width ur box is not taking all the block by his side */
+            width: 33%;
+        }
+        
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+
+        body{
+            
+            /* height: 5000px; */ /*it is use for display hiding*/
+            background-image: url(https://images.unsplash.com/photo-1519010470956-6d877008eaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header class="vishal">
+        
+<img src="https://img.freepik.com/premium-vector/lion-king-logo-design-vector-template_260747-85.jpg?w=740" alt="no loading">
+
+        <h1>welcome to my website</h1>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h3 class="headings">HEADING</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa illo nihil quas est distinctio, cumque ab inventore nemo reiciendis voluptatem autem voluptates ea? Eligendi nulla dolores delectus, odit corrupti aperiam omnis officiis voluptatibus dolore, deleniti, dicta a quas? Ab?</p>
+        </div>
+
+        <div class="box">
+            <h3 class="headings">HEADING</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa illo nihil quas est distinctio, cumque ab inventore nemo reiciendis voluptatem autem voluptates ea? Eligendi nulla dolores delectus, odit corrupti aperiam omnis officiis voluptatibus dolore, deleniti, dicta a quas? Ab?</p>
+        </div>
+
+
+        <div class="box">
+            <h3 class="headings">HEADING</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa illo nihil quas est distinctio, cumque ab inventore nemo reiciendis voluptatem autem voluptates ea? Eligendi nulla dolores delectus, odit corrupti aperiam omnis officiis voluptatibus dolore, deleniti, dicta a quas? Ab?</p>
+        </div>
+    </div>
+</body>
+</html>

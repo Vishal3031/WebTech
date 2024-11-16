@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;    /*ur container is grid(Grid means it can design ur page layout using grid)*/
+            /* grid-template-columns: 300px 100px 100px;8*/    /*means one column width is 300px and so on(nxt width is 100 and 100px) */
+            /*grid-template-columns: 300px auto 100px;*/     /*auto means empty space is auto*/
+            /*grid-template-columns: 1fr 4fr 1fr;*/        /* second width is devided by 1fr*4fr */
+            grid-template-columns: repeat(3, auto); /* 10 is your column size(number) and repeat is repeat your container item in auto */
+            grid-gap: 19px;    /*not good practice*/
+        }
+        .item{
+            
+            border: 2px solid yellow;
+            /* height: 100px;  */
+            /* width: 100px; */
+            background-color: yellowgreen;
+            margin: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-11</div>
+        <div class="item">this is item-12</div>
+        <div class="item">this is item-13</div>
+        <div class="item">this is item-14</div>
+        <div class="item">this is item-15</div>
+        <div class="item">this is item-16</div>
+        <div class="item">this is item-17</div>
+        <div class="item">this is item-18</div>
+        <div class="item">this is item-19</div>
+    </div>
+</body>
+</html>

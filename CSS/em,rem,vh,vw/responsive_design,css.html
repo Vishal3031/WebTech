@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em or rem units</title>
+
+<!-- responsive_design is a way for a web developer to make his website adapt to all the devices and resolutions -->
+    <style>
+        html{
+            font-size:20px ; /*basic html font*/
+        }
+
+        .container{
+            font-size: 7px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        #first{
+/* it is use cz if u want to resize any of element also ur "parent" or "child" is adust by defualt*/
+/*it's going to multiply* of his parent*//* if u can see this in ur website "inspect-computed"*//* "em" is use to responsive ur website if u use this atomatically ur font sizee is adujst any of the devices czz of his parent(px)*/
+            font-size: 3em;
+            padding: 2em; /*it multiply by ur font-size"em". if u r nt using "em" then, it is multiply ur px(parent) font-size*/ 
+        /* "em" is use for if u wnt to our font size is depend on his parents by its changing */
+        }
+
+        #second{
+            font-size: 3rem; /*it is multiply by ur basic html font-size*/
+            padding: 3rem;
+/*if anyone is increase ur browser default font setting so,if u wnt to ur website fonts are same as u given by relatively u can use "rem"*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+</body>
+</html>

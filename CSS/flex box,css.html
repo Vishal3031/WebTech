@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <!-- flexbox is one-dimensional layout method for laying out items i rows or columns, -->
+    <!-- CSS flexbox is a better way to align items into a container, -->
+    <!-- flexbox= flexible + box" the meaning of flexible is that which can be change.. -->
+
+    <style>
+            .container{
+                height: 435px;
+                border: 2px solid rgb(10, 10, 10);
+                width: 100%;
+/* initialize the container as a flexbox */ 
+/*if u r using to flex, it show in row form also it is default setting (row)*/
+                display: flex;
+
+/* flex properties for container also it is overwrited ur element if u one by one added flex directionz */
+                /*flex-direction: column; /*going to column direction */
+                /* flex-direction: column-reverse; /*that elements going to revers column*/
+                /*flex-direction: row-reverse; /* also it is going to reverse row*/
+                /*flex-direction: row; /*row is also default in flex*/ 
+
+
+
+/* if you want to resposive your websites "phone or pc"  */
+                /* flex-wrap:nowrap;
+                /*flex-wrap: wrap; /*it is use for responsive ur websites*/
+                /*flex-wrap:wrap-reverse; /*use for wrap reversing*/
+                
+
+/* in shortcut way to use "direction,wrap" u can use this:-  */
+                flex-flow: row nowrap;
+
+
+/* if u want to positioning ur content  */
+                /*justify-content: center;  /*use for center ur content*/
+                /*justify-content: space-between;  /*between two box space*/
+                /*justify-content: space-evenly; /*between two box space including first and last*/
+                /*justify-content: space-around; /*btw 2 box space, bt dfrnt space in 1st or last*/
+
+
+
+/* if u want to center any items in vertical-align(orgin a box)  or smthng */
+                /*align-items: center;
+                /*align-items: flex-start; /* by default it is*/
+                /*align-items: flex-end; /* items reach in buttom by row form*/
+                
+                /*align-items: stretch; /* vertical responsive with more soaceable*/
+                
+
+
+            }
+
+            .item{
+                width: 100px; /*aftr using flex*/
+                height: 100px;/*after using flex*/
+                background-color: blanchedalmond;
+                border: 2px solid black;
+                margin: 7px;
+                padding: 5px;
+            }
+
+/*flex properties for a flex item*/
+/*also u can use these for indivisual item*/
+
+            #item1{
+/* those value whose greater than the other items "order value" then,these position is going to be last item and first value item is going to be first position.*/
+            order: 2;
+
+/*if u want to one item is bigger then others item in whole box.*/
+            /* flex-grow: 3; */
+
+/*if u responsive ur websites these flex-shrink is going to first smaller than other items also whose flex-shrink value is greater than others, those item is to be small as compare to others */
+            /* flex-shrink: 4;  */
+
+            }
+
+            #item2{
+                order:3;
+                /* flex-grow: 4; /* more spaceble as compare to item1 "flexbox" */
+                /*flex-shrink: 5;*/
+
+/*when flex-direction is set to row flex-basis: will control width */
+/*when flex-direction is set to column flex-basis: will control height */
+                flex-basis: 200px;
+            }
+
+            #item3{
+                order: 5;
+
+/* in shortcut way to use "flex-grow:", "flex-shrink:", "flex-basis:" u can use this:- */
+                flex: 2 2 150px;
+            }
+
+            #item4{
+                order: 7;
+                
+/* use to alignment ur items  */
+                align-self: flex-end; /*use to buttom ur item*/
+                align-self: flex-start;
+                align-self: center;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>this is a heading</h1>
+    <div class="container">
+        <div class="item" id="item1">first Box</div>
+        <div class="item" id="item2">second Box</div>
+        <div class="item" id="item3">third Box</div>
+        <div class="item" id="item4">fourth Box</div>
+        <!-- <div class="item" id="item5">fifth Box</div>
+        <div class="item" id="item6">sixth Box</div> -->
+    </div>
+</body>
+</html>

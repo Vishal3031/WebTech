@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before nd aftr pceodo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" 
+    rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            
+            color: rgb(6, 6, 6);
+            background-repeat: no-repeat;
+            height: 500px;
+        }
+        
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .navigation{
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        li{
+            list-style: none;
+            padding: 15px 11px;
+            font-size: small;
+            font-family: 'Abril Fatface', cursive;
+            color: black;
+            
+        }
+
+        section{
+
+            display: flex;
+            flex-direction: column;
+            margin: 70px 146px;
+            align-items: center;
+            /* border: 2px solid rgb(140, 10, 10); */
+            height: 25px;
+            justify-content: center; /*use to center within box*/
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        /* section::before{
+            content: "this is content before section" ;
+        } */
+
+        /* section::after{
+            content: "this is content after section" ;
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICE</li>
+                <li class="item">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>welcome to my coding</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi facilis 
+            quibusdam quasi, excepturi, similique porro rerum sunt itaque modi esse impedit, unde 
+            </p>
+        </section>
+    
+</body>
+</html>
